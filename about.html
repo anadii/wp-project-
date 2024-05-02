@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <!--Nav Container-->
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--Logo-->
+            <a href="./index.html" class="logo">
+                <img src="./abc.png" alt="Your Logo" height="50x" />
+            <!--Navbar List-->
+            <ul class="navbar">
+                <li> <a href="index.html" >Home</a></li>
+                <li> <a href="cars.html" >Cars</a></li>
+                <li> <a href="about.html"class="active">About</a></li>
+                <li> <a href="./parts.html">Accessories </a></li>
+                <li> <a href="./blog.html">Our Blog</a></li>
+            </ul>
+            <!--search Icon-->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!--search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Search here...">
+            </div>
+        </div>
+    </header>
+    <style>
+        /* Style for video container */
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        /* Style for video */
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Style for content */
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Style for text content */
+        .about-text {
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <!-- Change "your-video.mp4" to the path of your video file -->
+        <video autoplay loop>
+            <source src="supra.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <section class="about container" id="about">
+        <div class="about-text">
+            <span class="about-title">About Us</span>
+            <h2 class="about-heading">Cheap Prices With <br> Quality Cars</h2>
+            <p>We are a premier car dealership specializing in sports cars and luxury vehicles. With a passion for performance and precision, we curate a selection of high-quality automobiles that cater to enthusiasts seeking exhilarating driving experiences.</p>
+            <p>In addition to our impressive collection of sports cars, we also offer a wide range of accessories to customize and enhance your vehicle. From performance upgrades to aesthetic modifications, we have everything you need to personalize your ride and make a statement on the road.</p>
+            <p>At our dealership, we understand that owning a sports car is more than just transportation—it's a lifestyle. That's why we strive to provide unparalleled customer service and support to ensure that your ownership experience exceeds your expectations.</p>
+           
+            <p>Visit us today to explore our showroom and discover why we're the ultimate destination for sports car enthusiasts and automotive aficionados.</p>
+            <!--About Button-->
+            <a href="cars.html" class="btn">Learn More</a>
+        </div>
+    </section>
+</body>
+</html>

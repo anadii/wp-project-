@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAR Booking Form</title>
+  <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+   
+    <div class="background">
+        <div class="booking-form">
+            <h2>Car Booking Form</h2>
+            <form id="myForm" onsubmit="return validateForm()" action="index.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <span id="nameError" class="error"></span>
+ 
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <span id="emailError" class="error"></span>
+                <label for="phone">phone:</label>
+                <input type="tel" name="phone" id="phone" required>
+                Select car:
+                <select name="type" value="Adventure Type" style="height: 1.2cm; ">
+                    <option value=""></option>
+                    <option value="Bmw">Bmw</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Aston Martin">Aston Martin</option>
+                    <option value="Koenigsegg">Koenigsegg</option>
+                </select>
+
+           
+        <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <script src="./form.js"></script>
+</form>
+</body>
+</html>

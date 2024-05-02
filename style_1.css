@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 100%; /* Fit to the width of the viewport */
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Hide overflow content */
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.vid {
+    width: 100%;
+    max-width: 100%; /* Fit to the width of the container */
+    transition: opacity 0.5s; /* Add transition effect */
+}
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+table {
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width of the table */
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #fff;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 100%; /* Fit to the width of the container */
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+.image-container img {
+    width: 30%;
+    max-width: 300px; /* Limit the maximum width of the images */
+    height: auto;
+    transition: opacity 0.5s; /* Add transition effect */
+}
+
+#price-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#price-button:hover {
+    background-color: #ccc; /* Change background color on hover */
+}
